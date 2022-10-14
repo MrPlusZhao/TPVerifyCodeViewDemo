@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14B82FEF565437C3B4D67FE9 /* Pods_TPVerifyCodeViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82227C896CA3965DE55F0FEC /* Pods_TPVerifyCodeViewDemo.framework */; };
 		47A2CCA728F9652500DC2E9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A2CCA628F9652500DC2E9E /* AppDelegate.m */; };
 		47A2CCAA28F9652500DC2E9E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A2CCA928F9652500DC2E9E /* SceneDelegate.m */; };
 		47A2CCAD28F9652500DC2E9E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A2CCAC28F9652500DC2E9E /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		47A2CCB228F9652600DC2E9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A2CCB128F9652600DC2E9E /* Assets.xcassets */; };
 		47A2CCB528F9652600DC2E9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A2CCB328F9652600DC2E9E /* LaunchScreen.storyboard */; };
 		47A2CCB828F9652600DC2E9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A2CCB728F9652600DC2E9E /* main.m */; };
+		47A2CCC128F9656C00DC2E9E /* TPVerifyCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A2CCBF28F9656C00DC2E9E /* TPVerifyCodeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,11 @@
 		47A2CCB428F9652600DC2E9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A2CCB628F9652600DC2E9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47A2CCB728F9652600DC2E9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		47A2CCBF28F9656C00DC2E9E /* TPVerifyCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPVerifyCodeView.m; sourceTree = "<group>"; };
+		47A2CCC028F9656C00DC2E9E /* TPVerifyCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPVerifyCodeView.h; sourceTree = "<group>"; };
+		721E30319006E5B4BBE77E22 /* Pods-TPVerifyCodeViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPVerifyCodeViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-TPVerifyCodeViewDemo/Pods-TPVerifyCodeViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		82227C896CA3965DE55F0FEC /* Pods_TPVerifyCodeViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPVerifyCodeViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB34399E33676E18019E6F31 /* Pods-TPVerifyCodeViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPVerifyCodeViewDemo.release.xcconfig"; path = "Target Support Files/Pods-TPVerifyCodeViewDemo/Pods-TPVerifyCodeViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B82FEF565437C3B4D67FE9 /* Pods_TPVerifyCodeViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D802E6A1AD4ECFBC48F5AC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				721E30319006E5B4BBE77E22 /* Pods-TPVerifyCodeViewDemo.debug.xcconfig */,
+				FB34399E33676E18019E6F31 /* Pods-TPVerifyCodeViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		47A2CC9928F9652500DC2E9E = {
 			isa = PBXGroup;
 			children = (
 				47A2CCA428F9652500DC2E9E /* TPVerifyCodeViewDemo */,
 				47A2CCA328F9652500DC2E9E /* Products */,
+				3D802E6A1AD4ECFBC48F5AC4 /* Pods */,
+				9018E866D5357561F660D8D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +81,7 @@
 		47A2CCA428F9652500DC2E9E /* TPVerifyCodeViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				47A2CCBE28F9656C00DC2E9E /* TPVerifyCodeView */,
 				47A2CCA528F9652500DC2E9E /* AppDelegate.h */,
 				47A2CCA628F9652500DC2E9E /* AppDelegate.m */,
 				47A2CCA828F9652500DC2E9E /* SceneDelegate.h */,
@@ -76,6 +97,23 @@
 			path = TPVerifyCodeViewDemo;
 			sourceTree = "<group>";
 		};
+		47A2CCBE28F9656C00DC2E9E /* TPVerifyCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				47A2CCC028F9656C00DC2E9E /* TPVerifyCodeView.h */,
+				47A2CCBF28F9656C00DC2E9E /* TPVerifyCodeView.m */,
+			);
+			path = TPVerifyCodeView;
+			sourceTree = "<group>";
+		};
+		9018E866D5357561F660D8D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82227C896CA3965DE55F0FEC /* Pods_TPVerifyCodeViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47A2CCBB28F9652600DC2E9E /* Build configuration list for PBXNativeTarget "TPVerifyCodeViewDemo" */;
 			buildPhases = (
+				56778A51085EA903FBF06344 /* [CP] Check Pods Manifest.lock */,
 				47A2CC9E28F9652500DC2E9E /* Sources */,
 				47A2CC9F28F9652500DC2E9E /* Frameworks */,
 				47A2CCA028F9652500DC2E9E /* Resources */,
+				70FDDEF05BE1F3C62DEE86F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +181,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56778A51085EA903FBF06344 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TPVerifyCodeViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FDDEF05BE1F3C62DEE86F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TPVerifyCodeViewDemo/Pods-TPVerifyCodeViewDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TPVerifyCodeViewDemo/Pods-TPVerifyCodeViewDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TPVerifyCodeViewDemo/Pods-TPVerifyCodeViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		47A2CC9E28F9652500DC2E9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +231,7 @@
 				47A2CCAD28F9652500DC2E9E /* ViewController.m in Sources */,
 				47A2CCA728F9652500DC2E9E /* AppDelegate.m in Sources */,
 				47A2CCB828F9652600DC2E9E /* main.m in Sources */,
+				47A2CCC128F9656C00DC2E9E /* TPVerifyCodeView.m in Sources */,
 				47A2CCAA28F9652500DC2E9E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +370,7 @@
 		};
 		47A2CCBC28F9652600DC2E9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721E30319006E5B4BBE77E22 /* Pods-TPVerifyCodeViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +397,7 @@
 		};
 		47A2CCBD28F9652600DC2E9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB34399E33676E18019E6F31 /* Pods-TPVerifyCodeViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
